@@ -1,3 +1,4 @@
+import 'package:Zygote_Nike_Layout/widgets/actionIconCard.dart';
 import 'package:flutter/material.dart';
 import 'package:Zygote_Nike_Layout/widgets/bottomNavBar.dart';
 
@@ -41,20 +42,28 @@ class _HomeState extends State<Home> {
                           fontWeight: FontWeight.w500,
                         ),
                   ),
-                  Container(
-                    width: screenWidth / 11,
-                    height: screenWidth / 11,
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).primaryColorLight,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(5),
+                  Row(
+                    children: <Widget>[
+                      actionIconCard(
+                        context,
+                        screenWidth / 11,
+                        screenWidth / 11,
+                        Theme.of(context).primaryColorLight,
+                        BorderRadius.all(Radius.circular(5)),
+                        Icons.search,
+                        Theme.of(context).cursorColor,
                       ),
-                    ),
-                    child: Icon(
-                      Icons.search,
-                      color: Theme.of(context).cursorColor,
-                    ),
-                  )
+                      actionIconCard(
+                        context,
+                        screenWidth / 11,
+                        screenWidth / 11,
+                        Theme.of(context).primaryColorLight,
+                        BorderRadius.all(Radius.circular(5)),
+                        Icons.notifications_none,
+                        Theme.of(context).cursorColor,
+                      ),
+                    ],
+                  ),
                 ],
               )
             ],
