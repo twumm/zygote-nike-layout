@@ -87,7 +87,45 @@ class _HomeState extends State<Home> {
                   width: screenWidth,
                   decoration: BoxDecoration(
                     color: Theme.of(context).primaryColorDark,
-                    borderRadius: BorderRadius.only(topRight: Radius.circular(screenWidth / 3,),)
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(screenWidth / 3),
+                    ),
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.fromLTRB(screenWidth / 130,
+                            screenHeight / 30, screenWidth / 6, 0),
+                        width: screenWidth / 1.2,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            RaisedButton(
+                              child: Text('Nike',
+                                  style: Theme.of(
+                                    context,
+                                  ).textTheme.subhead),
+                              onPressed: () {},
+                              shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(
+                                  screenWidth / 5,
+                                ),
+                              ),
+                              padding: EdgeInsets.fromLTRB(
+                                screenWidth / 100,
+                                screenWidth / 150,
+                                screenWidth / 100,
+                                screenWidth / 150,
+                              ),
+                              color: Theme.of(context).primaryColor,
+                            ),
+                            Text('Adidas'),
+                            Text('Puma'),
+                            Text('Supra'),
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 ),
               )
