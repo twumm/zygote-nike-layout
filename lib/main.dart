@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zygote_nike_layout/pages/app.dart';
+import 'package:Zygote_Nike_Layout/pages/app.dart';
 
 void main() => runApp(MyApp());
