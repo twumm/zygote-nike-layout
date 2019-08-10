@@ -23,26 +23,34 @@ class _HomeState extends State<Home> {
           child: Column(
             children: <Widget>[
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      Icons.arrow_back,
-                      color: Theme.of(context).cursorColor,
-                    ),
-                    onPressed: () {},
-                  ),
-                  Text(
-                    'Discover',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.display1.copyWith(
-                          color: Theme.of(
-                            context,
-                          ).cursorColor,
-                          fontWeight: FontWeight.w500,
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      IconButton(
+                        padding: EdgeInsets.fromLTRB(screenWidth / 30, 0, screenWidth / 10, 0,),
+                        icon: Icon(
+                          Icons.arrow_back,
+                          color: Theme.of(context).cursorColor,
                         ),
+                        onPressed: () {},
+                      ),
+                      Text(
+                        'Discover',
+                        style: Theme.of(
+                          context
+                        ).textTheme.display1.copyWith(
+                              color: Theme.of(
+                                context,
+                              ).cursorColor,
+                              fontWeight: FontWeight.w500,
+                            ),
+                      ),
+                    ],
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       actionIconCard(
                         context,
