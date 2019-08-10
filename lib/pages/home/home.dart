@@ -19,17 +19,24 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: Container(
         color: Theme.of(context).backgroundColor,
+        padding: EdgeInsets.only(top: screenHeight / 50),
         child: SafeArea(
           child: Column(
             children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       IconButton(
-                        padding: EdgeInsets.fromLTRB(screenWidth / 30, 0, screenWidth / 10, 0,),
+                        padding: EdgeInsets.fromLTRB(
+                          screenWidth / 30,
+                          0,
+                          screenWidth / 10,
+                          0,
+                        ),
                         icon: Icon(
                           Icons.arrow_back,
                           color: Theme.of(context).cursorColor,
@@ -38,9 +45,7 @@ class _HomeState extends State<Home> {
                       ),
                       Text(
                         'Discover',
-                        style: Theme.of(
-                          context
-                        ).textTheme.display1.copyWith(
+                        style: Theme.of(context).textTheme.display1.copyWith(
                               color: Theme.of(
                                 context,
                               ).cursorColor,
@@ -61,6 +66,7 @@ class _HomeState extends State<Home> {
                         Icons.search,
                         Theme.of(context).cursorColor,
                       ),
+                      Padding(padding: EdgeInsets.only(left: screenWidth / 20)),
                       actionIconCard(
                         context,
                         screenWidth / 11,
@@ -70,6 +76,7 @@ class _HomeState extends State<Home> {
                         Icons.notifications_none,
                         Theme.of(context).cursorColor,
                       ),
+                      Padding(padding: EdgeInsets.only(right: screenWidth / 20))
                     ],
                   ),
                 ],
