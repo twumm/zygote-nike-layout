@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             display1: TextStyle(fontSize: 28, fontWeight: FontWeight.w700, color: Colors.black),
             headline: TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: Colors.black),
             title: TextStyle(fontSize: 22, fontWeight: FontWeight.w500, color: Colors.white),
-            subhead: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w400, color: Colors.white),
+            subhead: TextStyle(fontSize: 19.0, fontWeight: FontWeight.w400, color: Colors.white),
             body2: TextStyle(fontSize: 17.0, fontWeight: FontWeight.w500, color: Colors.white),
             body1: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w400, color: Colors.white),
             subtitle: TextStyle(fontSize: 13.0, fontWeight: FontWeight.w400, color: Colors.grey),
