@@ -80,6 +80,16 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ],
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(top: screenHeight / 15),
+                  width: screenWidth,
+                  decoration: BoxDecoration(
+                    color: Theme.of(context).primaryColorDark,
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(screenWidth / 3,),)
+                  ),
+                ),
               )
             ],
           ),
